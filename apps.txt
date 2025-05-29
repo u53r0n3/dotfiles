@@ -1,0 +1,24 @@
+-- apps to install
+
+i3
+i3blocks
+fd
+ripgrep
+xmodmap
+pcmanfm
+neovim
+fzf
+alacritty
+lsd
+lazygit
+htop
+btop
+brave
+nnn
+rsync
+dunst
+feh
+flameshot
+rofi
+lxappearance
+numlockx

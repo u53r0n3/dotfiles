@@ -1,0 +1,5 @@
+#!/bin/bash
+pa=$(pwd)
+mv "$1" ~/dotfiles/
+
+ln -s ~/dotfiles/$1 $1

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# DOSSIERS
+
+rsync -auv ~/.config/ ~/backup/home/config/
+rsync -auv ~/.local/bin/ ~/backup/home/local/bin/
+rsync -auv ~/ui/ ~/backup/home/ui/
+rsync -auv ~/scripts/ ~/backup/home/scripts/
+rsync -auv ~/keypass/ ~/backup/home/keypass/
+rsync -auv ~/git/ ~/backup/home/git/
+rsync -auv ~/.themes/ ~/backup/home/themes/
+rsync -auv ~/documents/ ~/backup/home/documents/
+
+# FICHIERS
+
+rsync -auv ~/.bash_history ~/backup/home/
+rsync -auv ~/.CO.temp ~/backup/home/
+rsync -auv ~/.bashrc ~/backup/home/
+rsync -auv ~/.dunstrc ~/backup/home/
+rsync -auv ~/.easyclip ~/backup/home/
+rsync -auv ~/.histfile ~/backup/home/
+rsync -auv ~/.lesshst ~/backup/home/
+rsync -auv ~/.vimrc ~/backup/home/
+rsync -auv ~/.Xmodmap ~/backup/home/
+rsync -auv ~/.Xresources ~/backup/home/
+rsync -auv ~/.zshrc ~/backup/home/
+rsync -auv ~/.zcompdump ~/backup/home/
+rsync -auv ~/.xinitrc ~/backup/home/
+rsync -auv ~/.xinitrc.awe ~/backup/home/
+rsync -auv ~/.xinitrc.bsp ~/backup/home/
+rsync -auv ~/.xinitrc.dwm ~/backup/home/
+
+
+
+
+
+notify-send "sauvegarde termine"
+

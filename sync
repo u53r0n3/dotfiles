@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# DOSSIERS
+
+rsync -auv ~/.config/ultimate-neovim/ ~/backup/.config/nvim/
+rsync -auv ~/.config/alacritty/ ~/backup/.config/alacritty/
+rsync -auv ~/.config/i3/ ~/backup/.config/i3/
+rsync -auv ~/.config/i3blocks/ ~/backup/.config/i3blocks/
+rsync -auv ~/.config/lsd/ ~/backup/.config/lsd/
+rsync -auv ~/.config/nnn/ ~/backup/.config/lsd/
+rsync -auv ~/.config/qtile/ ~/backup/.config/qtile/
+rsync -auv ~/.config/rofi/ ~/backup/.config/rofi/
+rsync -auv ~/.config/dunst/ ~/backup/.config/dunst/
+rsync -auv ~/bin/ ~/backup/bin/
+rsync -auv /etc/X11/xorg.conf.d/ ~/backup/etc/X11/xorg.conf.d/
+rsync -auv ~/.fonts/ ~/backup/.fonts/
+rsync -auv ~/arch/backup/home/local/bin/ ~/backup/scripts/
+rsync -auv ~/.local/share/fonts/ ~/backup/.local/share/fonts/
+rsync -auv ~/arch/backup/home/ui/ ~/backup/archFiles/dwm/
+#FICHIERS
+
+rsync -auv ~/.dunstrc ~/backup/
+rsync -auv ~/.zshrc ~/backup/
+rsync -auv ~/.histfile ~/backup/
+rsync -auv ~/.tmux.conf ~/backup/
+rsync -auv ~/.Xmodmap ~/backup/
+rsync -auv ~/.Xresources ~/backup/
+rsync -auv ~/arch/backup/home/.CO.temp ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.easyclip ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.histfile ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.lesshst ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.xinitrc ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.Xresources ~/backup/archFiles/
+rsync -auv ~/arch/backup/home/.zshrc ~/backup/archFiles/
+rsync -auv /etc/environment ~/backup/etc/
+
+
+notify-send "Sauvegarde termine"

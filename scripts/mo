@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo mount /dev/"$1" /mnt/usb/

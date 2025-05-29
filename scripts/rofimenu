@@ -1,0 +1,21 @@
+#!/bin/bash
+
+title="Scripts "
+widthpercent=15
+
+typeset -A menu
+menu=(
+  [1 Mode jour]="redshift -x"
+  [2 Mode nuit]="redshift -O 4000"
+  [4 Shutdown]="shutdown now"
+  [3 Sauvegarde]="sync"
+  
+)
+
+typeset -A colors
+colors=(
+    [-color-window]="#181c28, #45434a, #45434a"
+    [-color-normal]="#2687aa, #ffffff, #aa5478, #dc322f, #000000"
+    [-color-active]="#fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3"
+    [-color-urgent]="#fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3"
+)

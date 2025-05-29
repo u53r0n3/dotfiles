@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+printf "###########################" >> ~/.CO.temp
+printf "\n" >> ~/.CO.temp
+printf "#" >> ~/.CO.temp
+printf "\n" >> ~/.CO.temp
+printf "#	$2" >> ~/.CO.temp
+printf "\n" >> ~/.CO.temp
+printf "#" >> ~/.CO.temp
+printf "\n" >> ~/.CO.temp
+printf "###########################" >> ~/.CO.temp
+printf "\n\n" >> ~/.CO.temp
+printf "		$1" >> ~/.CO.temp
+printf "\n\n\n\n" >> ~/.CO.temp
+
+notify-send "description ajouter"

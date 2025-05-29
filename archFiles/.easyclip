@@ -1,0 +1,51 @@
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': ' [Sauvegarde]="sync"'}
+{'type': 'v', 'text': '"'}
+{'type': 'v', 'text': 'ps axch -o cmd:15,%cpu --sort=-%cpu | head'}
+{'type': 'v', 'text': ' '}
+{'type': 'v', 'text': 'Sxiv.background: #181c28Sxiv.foreground: #bbbbbbSxiv.font: ttf-hack:size=12'}
+{'type': 'v', 'text': '#'}
+{'type': 'V', 'text': '/* See LICENSE file for copyright and license details. */'}
+{'type': 'v', 'text': '#reload sxhkd:super + shift + s	pkill -USR1 -x sxhkd'}
+{'type': 'v', 'text': '#!/bin/bashkill -15 $(ps -u $USER -o pid,%mem,%cpu,comm | sort -b -k2 -r | sed -n ''1!p'' | dmenu -i -l 15 | awk ''{print $1}'')'}
+{'type': 'v', 'text': 'PATH("sb-cpu")'}
+{'type': 'v', 'text': 'inherit            = powerline-templates/right-to-left-itembackground         = #55aa55background-next    = ${colors.red}'}
+{'type': 'v', 'text': 'format-connected-foreground = #000000format-connected-background = #55aa55'}
+{'type': 'v', 'text': '[module/battery]type = internal/batterybattery = BAT0adapter = AC0full-at = 98format-charging = <animation-charging> <label-charging>format-charging-underline = #ffb52aformat-discharging = <animation-discharging> <label-discharging>format-discharging-underline = ${self.format-charging-underline}format-full-prefix = " "format-full-prefix-foreground = ${colors.foreground-alt}format-full-underline = ${self.format-charging-underline}ramp-capacity-0 = ramp-capacity-1 = ramp-capacity-2 = ramp-capacity-foreground = ${colors.foreground-alt}animation-charging-0 = animation-charging-1 = animation-charging-2 = animation-charging-foreground = ${colors.foreground-alt}animation-charging-framerate = 750animation-discharging-0 = animation-discharging-1 = animation-discharging-2 = animation-discharging-foreground = ${colors.foreground-alt}animation-discharging-framerate = 750'}
+{'type': 'v', 'text': '${root.foreground}'}
+{'type': 'v', 'text': 'inherit            = powerline-templates/right-to-left-itembackground         = ${colors.green}background-next    = ${colors.red}'}
+{'type': 'v', 'text': 'wm-restack = bspwm'}
+{'type': 'v', 'text': ';'}
+{'type': 'v', 'text': '[module/eth]type = internal/networkinterface = ens5interval = 3.0format-connected-underline = #55aa55format-connected-prefix = " "format-connected-prefix-foreground = ${colors.foreground-alt}label-connected = %local_ip%format-disconnected =;format-disconnected = <label-disconnected>;format-disconnected-underline = ${self.format-connected-underline};label-disconnected = %ifname% disconnected;label-disconnected-foreground = ${colors.foreground-alt}'}
+{'type': 'v', 'text': '[module/battery]type = internal/batterybattery = BAT0adapter = AC0full-at = 98format-charging = <animation-charging> <label-charging>format-charging-underline = #ffb52aformat-discharging = <animation-discharging> <label-discharging>format-discharging-underline = ${self.format-charging-underline}format-full-prefix = " "format-full-prefix-foreground = ${colors.foreground-alt}format-full-underline = ${self.format-charging-underline}ramp-capacity-0 = ramp-capacity-1 = ramp-capacity-2 = ramp-capacity-foreground = ${colors.foreground-alt}animation-charging-0 = animation-charging-1 = animation-charging-2 = animation-charging-foreground = ${colors.foreground-alt}animation-charging-framerate = 750animation-discharging-0 = animation-discharging-1 = animation-discharging-2 = animation-discharging-foreground = ${colors.foreground-alt}animation-discharging-framerate = 750'}
+{'type': 'v', 'text': '[module/pulseaudio]type = internal/pulseaudioformat-volume = <label-volume> <bar-volume>label-volume = VOL %percentage%%label-volume-foreground = ${root.foreground}label-muted = 🔇 mutedlabel-muted-foreground = #666bar-volume-width = 10bar-volume-foreground-0 = #55aa55bar-volume-foreground-1 = #55aa55bar-volume-foreground-2 = #55aa55bar-volume-foreground-3 = #55aa55bar-volume-foreground-4 = #55aa55bar-volume-foreground-5 = #f5a70abar-volume-foreground-6 = #ff5555bar-volume-gradient = falsebar-volume-indicator = |bar-volume-indicator-font = 2bar-volume-fill = ─bar-volume-fill-font = 2bar-volume-empty = ─bar-volume-empty-font = 2bar-volume-empty-foreground = ${colors.foreground-alt}'}
+{'type': 'v', 'text': 'label = %temperature-c%'}
+{'type': 'v', 'text': '#f50a4d'}
+{'type': 'v', 'text': '${root.background}'}
+{'type': 'v', 'text': '${colors.black}'}
+{'type': 'v', 'text': 'temperature'}
+{'type': 'v', 'text': 'time = %H:%M'}
+{'type': 'v', 'text': 'content-background = ${self.background}content-foreground = ${colors.red}'}
+{'type': 'v', 'text': 'format-background = ${self.background}format-foreground = ${colors.black}'}
+{'type': 'v', 'text': 'inherit            = powerline-templates/right-to-left-itembackground         = ${colors.red}background-next    = ${colors.yellow}'}
+{'type': 'v', 'text': '[module/temperature]type = internal/temperaturethermal-zone = 0warn-temperature = 60format = <ramp> <label>format-underline = #f50a4dformat-warn = <ramp> <label-warn>format-warn-underline = ${self.format-underline}label = %temperature-c%label-warn = %temperature-c%label-warn-foreground = ${colors.secondary}ramp-0 = ramp-1 = ramp-2 = ramp-foreground = ${colors.foreground-alt}'}
+{'type': 'v', 'text': 'type = internal/dateinterval = 5'}
+{'type': 'v', 'text': 'content-background = ${self.background}content-foreground = ${colors.black}'}
+{'type': 'v', 'text': '[module/date]type = internal/dateinterval = 5date =date-alt = " %Y-%m-%d"time = %H:%Mtime-alt = %H:%M:%Sformat-prefix = format-prefix-foreground = ${colors.foreground-alt}format-underline = #0a6cf5label = %date% %time%'}
+{'type': 'v', 'text': 'label = %title:0:30:...%'}
+{'type': 'v', 'text': '; vim:ft=dosini'}
+{'type': 'v', 'text': '[colors];background = ${xrdb:color0:#222}background = #222background-alt = #444;foreground = ${xrdb:color7:#222}foreground = #dfdfdfforeground-alt = #555primary = #ffb52asecondary = #e60053alert = #bd2c40'}
+{'type': 'v', 'text': '[module/bspwm]type = internal/bspwmlabel-focused = %index%label-focused-background = ${colors.background-alt}label-focused-underline= ${colors.primary}label-focused-padding = 2label-occupied = %index%label-occupied-padding = 2label-urgent = %index%!label-urgent-background = ${colors.alert}label-urgent-padding = 2label-empty = %index%label-empty-foreground = ${colors.foreground-alt}label-empty-padding = 2; Separator in between workspaces; label-separator = |'}
+{'type': 'v', 'text': 'modules-left = bspwm'}
+{'type': 'v', 'text': ';==========================================================;;;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝;;;   To learn more about how to configure Polybar;   go to https://github.com/polybar/polybar;;   The README contains a lot of information;;=========================================================='}
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': ''''}
+{'type': 'v', 'text': ''}
+{'type': 'v', 'text': 'rsync -auv ~/ ~/backup/home/'}
+{'type': 'v', 'text': 'printf "\16  "'}
+{'type': 'v', 'text': '  '}
+{'type': 'v', 'text': 'printf "\16  "printf "\16  "printf "\16  "printf "\16  "printf "\16  "printf "\16  "printf "\16  "printf "\16  "'}
+{'type': 'v', 'text': 'printf "\16  "printf "\16  "printf "\16  "printf "\16  "'}

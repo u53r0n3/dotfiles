@@ -1,0 +1,11 @@
+rofi -show drun -modi run -location 0 -width 33 \
+		 -lines 12 -line-margin 0 -line-padding 1 \
+		 -separator-style none -font "hack 11" -columns 1 -bw 0 \
+		 -disable-history \
+		 -hide-scrollbar \
+		 -color-window "#181c28, #181c28, #bbbbbb" \
+		 -color-normal "#181c28, #bbbbbb, #181c28, #005577, #bbbbbb" \
+		 -color-active "#181c28, #bbbbbb, #181c28, #007763, #bbbbbb" \
+		 -color-urgent "#181c28, #bbbbbb, #181c28, #77003d, #bbbbbb" \
+		 -kb-row-select "Tab" -kb-row-tab "" \
+         -icon-theme "OieIcons" -show-icons

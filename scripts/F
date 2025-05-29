@@ -1,0 +1,1 @@
+history 100 | fzf --height=5

@@ -1,0 +1,180 @@
+##########################################################################
+#																		 #
+#	commandes linux utiles												 #
+#	utiliser lea pour entrer des commandes comme ca : 					 #
+#																		 #
+#		$ lea "<command>" "<description>"								 #
+#																		 #
+##########################################################################
+
+
+###########################
+#
+#	change resolution de virtualbox. firefox c la vm
+#
+###########################
+
+		VBoxManage setextradata 'Firefox' 'CustomVideoMode1' '1600x900x32'
+
+
+
+###########################
+#
+#	lister les disques
+#
+###########################
+
+		lsblk
+
+
+
+###########################
+#
+#	verifier cle usb
+#
+###########################
+
+		sudo dmesg | grep sdc
+
+
+
+###########################
+#
+#	donne le nombre de fichiers lister par ls
+#
+###########################
+
+		ll | wc -l
+
+
+
+###########################
+#
+#	list les fichiers avec leurs tailles
+#
+###########################
+
+		du -sh *
+
+
+
+###########################
+#
+#	lister les application qui comsome le plus cpu, remplacer cpu par mem par avoir la ram
+#   cmd:15 c pour reduire la taille des colonne c juste estetique
+###########################
+
+		ps axch -o cmd:15,%cpu --sort=-%cpu | head
+
+
+
+###########################
+#
+#	palette couleur
+#
+###########################
+
+		yad --color
+
+
+
+###########################
+#
+#	modifier volume, on peu mettre - ou + apres change volume et il ya aussi les options --toogle-mute et --mute
+#
+###########################
+
+		pulsemixer --change-volume -5
+
+
+
+###########################
+#
+#	rsync vers vps
+#
+###########################
+
+		rsync -av -e ssh source/ YOUR-USER@REMOTE-MACHINE:/path/to/destination/
+
+
+
+###########################
+#
+#	analyse disk usage
+#
+###########################
+
+		gdu
+
+
+
+###########################
+#
+#	htop en mieux
+#
+###########################
+
+		bpytop
+
+
+
+###########################
+#
+#	analyse disk
+#
+###########################
+
+		duf
+
+
+
+###########################
+#
+#	pour find
+#
+###########################
+
+		fd
+
+
+
+###########################
+#
+#	chercher dans plusieurs fichiers d un repertoire
+#
+###########################
+
+		ripgrep
+
+
+
+###########################
+#
+#	trouver le numero de process de firefox. remplacer firefox par nimporte kel app
+#
+###########################
+
+		pidof firefox
+
+
+
+###########################
+#
+#	pour update vol. 10 c le numero de signal
+#
+###########################
+
+		pamixer -i 10; pkill -RTMIN+10 dwmblocks
+
+
+
+###########################
+#
+#	log info en cas erreur
+#
+###########################
+
+		journalctl -xe
+
+
+

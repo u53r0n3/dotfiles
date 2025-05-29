@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "feh --bg-fill $HOME/wallpapers/$1 &"
+
+
+exit

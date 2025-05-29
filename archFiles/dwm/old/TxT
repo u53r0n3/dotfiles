@@ -1,0 +1,3 @@
+rm -Rf bigtest/dwm/
+cp -R dwm/ bigtest/
+cp *.diff bigtest/dwm/

@@ -1,0 +1,1 @@
+rsync -av -e ssh /home/user_one/backup/ arch@46.105.29.93:/home/arch/backup/

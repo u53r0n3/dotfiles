@@ -1,0 +1,7 @@
+#!/bin/bash
+rm dwm/config.h
+cp dwm/config.def.h dwm/config.h
+cd dwm
+sudo make clean install
+cd ..
+exit
