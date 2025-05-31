@@ -1,0 +1,3 @@
+amixer #control volume command line
+alsamixer # control volume command line visuel
+git remote set-url origin git@github.com:u53r0n3/dotfiles.git

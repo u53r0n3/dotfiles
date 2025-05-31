@@ -9,10 +9,11 @@ return {
     {
       "<leader>l",
       function()
-        require("conform").format({ async = false, quiet = true })
-vim.defer_fn(function()
-        vim.cmd("edit!")
-      end, 1000)
+--        require("conform").format({ async = false, quiet = true })
+-- vim.defer_fn(function()
+--        vim.cmd("edit!")
+--      end, 1000)
+        require("conform").format({ async = true, lsp_format = "fallback" })
       end,
 
       mode = "n",
@@ -43,7 +44,7 @@ vim.defer_fn(function()
           return nil
         else
           return {
-            timeout_ms = 3000,
+            timeout_ms = 500,
             lsp_format = "fallback",
           }
         end
@@ -58,7 +59,7 @@ vim.defer_fn(function()
         jsonc = { "prettier", "prettierd", stop_after_first = true },
         lua = { "stylua" },
         markdown = { "prettier", "prettierd", stop_after_first = true },
-        php = { "prettier_php" }, -- or ""prettier"" ord "php-cs-fixer"
+        php = { "php" }, -- or ""prettier"" ord "php-cs-fixer"
         ruby = { "rubocop" },
         rust = { "rustfmt", lsp_format = "fallback" },
         scss = { "prettier", "prettierd", stop_after_first = true },
@@ -91,6 +92,16 @@ vim.defer_fn(function()
         stdin = true,
         timeout = 10000,
         },
+         php = { 
+                    command = "php-cs-fixer", 
+                    args = { 
+                        "fix", "--rules=@PSR12",
+                        "$FILENAME",
+                       -- "--config=/your/path/to/config/file/[filename].php",
+                        "--allow-risky=yes", -- if you have risky stuff in config, if not you dont need it.
+                    }, 
+                    stdin = false,
+                },
 cwd = function()
   return vim.fn.getcwd()
 end,

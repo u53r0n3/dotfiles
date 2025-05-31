@@ -28,6 +28,10 @@ alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias myv='NVIM_APPNAME="nvim-kickstart" nvim'
 alias uv='NVIM_APPNAME="ultimate-neovim" nvim'
+alias nvc='NVIM_APPNAME="nvchad" nvim'
+alias i3c="uv ~/.config/i3/config"
+alias zshc="uv ~/.zshrc"
+alias uvc="uv ~/.config/ultimate-neovim/lua/plugins/"
 
  			function	svi() {		uv "$(fzf)"  ;		}
 

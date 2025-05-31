@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DOSSIERS
-
+rsync -auv ~/Mydocs/ ~/backup/Mydocs/
 rsync -auv ~/.config/ultimate-neovim/ ~/backup/.config/nvim/
 rsync -auv ~/.config/alacritty/ ~/backup/.config/alacritty/
 rsync -auv ~/.config/i3/ ~/backup/.config/i3/
@@ -13,12 +13,15 @@ rsync -auv ~/.config/rofi/ ~/backup/.config/rofi/
 rsync -auv ~/.config/dunst/ ~/backup/.config/dunst/
 rsync -auv ~/bin/ ~/backup/bin/
 rsync -auv /etc/X11/xorg.conf.d/ ~/backup/etc/X11/xorg.conf.d/
+rsync -auv /usr/share/zsh-syntax-highlighting/ ~/backup/usr/share/zsh-syntax-highlighting/
 rsync -auv ~/.fonts/ ~/backup/.fonts/
 rsync -auv ~/arch/backup/home/local/bin/ ~/backup/scripts/
 rsync -auv ~/.local/share/fonts/ ~/backup/.local/share/fonts/
 rsync -auv ~/arch/backup/home/ui/ ~/backup/archFiles/dwm/
 #FICHIERS
 
+rsync -auv ~/.fehbg ~/backup/
+rsync -auv ~/Downloads/temp.jpg ~/backup/Downloads/
 rsync -auv ~/.dunstrc ~/backup/
 rsync -auv ~/.zshrc ~/backup/
 rsync -auv ~/.histfile ~/backup/

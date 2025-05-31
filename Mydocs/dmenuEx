@@ -1,0 +1,1 @@
+dmenu -fn "FiraCode Nerd Font-10" -nb "#1d1f21" -nf "#c5c8c6" -sb "#81a2be" -sf "#ffffff"

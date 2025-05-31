@@ -63,4 +63,18 @@
             }
         end
     },
+{
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {
+  debounce = 100,
+       indent = { char = "|" },
+     --  whitespace = { highlight = { "Whitespace", "NonText" } },
+       scope = { exclude = { language = { "lua" } } },
+          },
+},
+
+--{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   }
