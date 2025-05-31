@@ -17,7 +17,7 @@ rsync -auv /usr/share/zsh-syntax-highlighting/ ~/backup/usr/share/zsh-syntax-hig
 rsync -auv ~/.fonts/ ~/backup/.fonts/
 rsync -auv ~/arch/backup/home/local/bin/ ~/backup/scripts/
 rsync -auv ~/.local/share/fonts/ ~/backup/.local/share/fonts/
-rsync -auv ~/arch/backup/home/ui/ ~/backup/archFiles/dwm/
+rsync -auv ~/arch/backup/home/ui/ ~/backup/dwm/
 #FICHIERS
 
 rsync -auv ~/.fehbg ~/backup/
